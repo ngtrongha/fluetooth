@@ -41,6 +41,7 @@ class FluetoothImpl implements Fluetooth {
     if (responseMap != null) {
       return FluetoothDevice.fromMap(Map<String, String>.from(responseMap));
     }
+    return null;
   }
 
   @override
