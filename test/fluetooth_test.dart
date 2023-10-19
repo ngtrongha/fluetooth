@@ -8,13 +8,13 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
+    channel.setMethodCallHandler((MethodCall methodCall) async {
       return true;
     });
   });
 
   tearDown(() {
-    channel.setMockMethodCallHandler(null);
+    channel.setMethodCallHandler(null);
   });
 
   test('isAvailable', () async {

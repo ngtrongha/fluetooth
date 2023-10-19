@@ -151,7 +151,7 @@ class _MyAppState extends State<MyApp> {
           TextButton(
             onPressed: _connectedDevice != null && !_isBusy ? _print : null,
             style: TextButton.styleFrom(
-              primary: Colors.amber,
+              foregroundColor: Colors.amber,
             ),
             child: const Text('Print'),
           ),
